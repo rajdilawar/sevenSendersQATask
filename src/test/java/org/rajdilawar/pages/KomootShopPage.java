@@ -23,18 +23,19 @@ public class KomootShopPage {
 
     By shopButton = By.xpath("//a[@class=\"tw-inline-flex tw-justify-center tw-items-center c-btn c-btn--primary-inv\"]");
     By getPremiumButton = By.xpath("(//div[@class=\"css-1bgnsec\"][contains(text(),'Get Premium')])[2]");
-   //By getPremiumButton = By.xpath("//*[@id=\"gdpr_banner_portal\"]/div/div/div/div[2]/div/div[1]/button/div/div");
    By acceptCookiesButton = By.xpath("//div[@class=\"css-1bgnsec\"][contains(text(),'Accept All')]");
-    By clickOnContinueButton = By.xpath("//div[@class=\"a-section\"]/span/span/input");
     By verifyErrorText = By.xpath("(//div[@class=\"a-box-inner a-alert-container\"]/div[@class=\"a-alert-content\"])[2]");
+
+
+    public void acceptCookies() {
+        driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
+        driver.findElement(acceptCookiesButton).click();
+    }
 
 
     //action on objects click event
     public void clickOnGetPremiumButton() {
-
         driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
-        driver.findElement(acceptCookiesButton).click();
-//        driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
         driver.findElement(getPremiumButton).click();
     }
 

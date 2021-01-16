@@ -48,4 +48,6 @@ public class KomootLoginPage {
         Assert.assertEquals( "Sign up or log in to continue", pageTitleLoginPage);
         return pageTitleLoginPage;
     }
+
+
 }

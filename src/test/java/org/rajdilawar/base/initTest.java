@@ -29,9 +29,6 @@ public class initTest {
 
         } else if (browserName.equals("firefox")) {
             driver = new FirefoxDriver();
-//            FirefoxProfile profile = new ProfilesIni().getProfile("default");
-//            profile.setPreference("network.cookie.cookieBehavior", 2);
-//            driver = new FirefoxDriver((Capabilities) profile);
             System.out.println("Initializing Firefox driver");
         }
         driver.manage().window().maximize();

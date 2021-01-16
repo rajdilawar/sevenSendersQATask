@@ -34,6 +34,11 @@ public class Configuration {
         return configuration.getProperty("loginPage_url");
     }
 
+    public String planPageUrl() {
+
+        return configuration.getProperty("planPage_url");
+    }
+
     public String email() {
 
         return configuration.getProperty("email");
