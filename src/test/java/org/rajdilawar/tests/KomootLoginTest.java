@@ -20,7 +20,6 @@ public class KomootLoginTest {
         Configuration configuration = new Configuration();
         driver.get(configuration.loginPageUrl());
         KomootLoginPage komootLoginPage = new KomootLoginPage(driver);
-        driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
         komootLoginPage.fillSignUpForm();
         driver.quit();
     }

@@ -30,8 +30,9 @@ public class KomootLoginPage {
         driver.findElement(submitButton).click();
         driver.findElement(displayName).sendKeys(configuration.displayName());
         driver.findElement(password).sendKeys(configuration.password());
-        driver.findElement(submitButton).click();
-        getSuccessMessage();
+        //uncomment in case no captcha or google security code will work
+        //driver.findElement(submitButton).click();
+        //getSuccessMessage();
     }
 
     public String getSuccessMessage () throws IOException {

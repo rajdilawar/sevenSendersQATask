@@ -1,6 +1,6 @@
 package org.rajdilawar.tests;
 
-import org.junit.Test;
+import org.testng.annotations.Test;
 import org.openqa.selenium.WebDriver;
 import org.rajdilawar.base.initTest;
 import org.rajdilawar.pages.KomootHomePage;
@@ -11,7 +11,7 @@ import java.util.concurrent.TimeUnit;
 
 public class KomootHomeTest {
 
-    @Test
+    @Test(priority = 1)
     public void KomootHomePageTestChangeLanguageToDE() throws IOException {
 
         WebDriver driver = new initTest().getWebdriver();
